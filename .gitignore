@@ -119,6 +119,3 @@ dist
 *.njsproj
 *.sln
 *.sw?
-package.json
-package-lock.json
-tsconfig.json
