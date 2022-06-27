@@ -1,21 +1,26 @@
 {
-  "name": "server-side",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc -w",
-    "start": "nodemon build/app.js",
-    "serve": "concurrently npm:build npm:start"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "eslint": "^8.18.0",
-    "typescript": "4.7.3"
-  },
-  "dependencies": {
-    "concurrently": "^7.2.2",
-    "nodemon": "^2.0.16"
-  }
+    "name": "server-side",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc -w",
+        "start": "nodemon build/app.js",
+        "serve": "concurrently npm:build npm:start",
+        "lint": "eslint --fix --ext.ts."
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "5.29.0",
+        "@typescript-eslint/parser": "5.29.0",
+        "eslint": "8.18.0",
+        "eslint-config-airbnb-base": "15.0.0",
+        "eslint-plugin-import": "2.26.0",
+        "typescript": "4.7.3"
+    },
+    "dependencies": {
+        "concurrently": "7.2.2",
+        "nodemon": "2.0.16"
+    }
 }
